@@ -2,7 +2,7 @@
 layout: bootcamp
 root: .
 venue: University of Michigan
-address: Biomedical Science Research Building (BSRB), seminar rooms ABC
+address: North Campus Research Complex (NCRC)<br/>Building 18, South Atrium<br/>200 Plymouth Rd.
 country: United-States
 humandate: July 19-20, 2014
 humantime: 9:00 am - 5:00 pm
@@ -60,7 +60,17 @@ contact: admin@software-carpentry.org
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students, post-docs, and other researchers.
+  The course is aimed at post-docs with no programming experience.
+</p>
+
+<p>
+  <strong>Sponsors:</strong>
+  UM Postdoc Office and Postdoc Association
+</p>
+
+<p>
+  <strong>Local host:</strong>
+  Sean Ma
 </p>
 
 <!--
@@ -69,11 +79,10 @@ contact: admin@software-carpentry.org
 {% if page.latlng %}
 <p>
   <strong>Where:</strong>
-  {{ page.address }}.
-  Get directions with
-  <a href="//www.openstreetmap.org/?mlat={{ page.latlng | replace:',','&mlon=' }}&zoom=16">OpenStreetMap</a>
-  or
-  <a href="//maps.google.com/maps?q={{ page.latlng }}">Google Maps</a>.
+  {{ page.address }}</br>
+  Get written directions
+  <a href="http://ncrc.cms.si.umich.edu/contact/mapsdirections/building18">here</a>
+  and city bus stops <a href="http://ncrc.cms.si.umich.edu/sites/default/files/NCRC%20Map%202-19-14.jpg">here</a>.
 </p>
 {% endif %}
 
@@ -92,13 +101,9 @@ contact: admin@software-carpentry.org
 -->
 <p>
   <strong>Contact</strong>:
-  Please mail
-  {% if page.contact %}
-    <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
-  {% else %}
-    <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
-  {% endif %}
-  for more information.
+  Please mail <a href='mailto:tehsheng@umich.edu'>Sean Ma</a> (local host)
+  or <a href='mailto:{{page.contact}}'>{{page.contact}}</a>
+  (general inquiry) for more information.
 </p>
 
 <hr/>
@@ -130,7 +135,7 @@ contact: admin@software-carpentry.org
       <tr> <td>12:20 pm</td> <td>Lunch</td> </tr>
       <tr> <td>1:40 pm</td> <td>Data management</td> </tr>
       <tr> <td>3:10 pm</td> <td>Break</td> </tr>
-      <tr> <td>3:30 pm</td> <td>Automating tasks with make</td> </tr>
+      <tr> <td>3:30 pm</td> <td>Using databases with SQL</td> </tr>
     </table>
   </div>
 </div>
